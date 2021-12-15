@@ -23,7 +23,7 @@ TWO_PI = math.pi*2
 done = False
 oPoints = []
 after = 314
-noiseMax = 5
+mult = 5
 time.sleep(2)
 
 half = False  # set it to True if you want half torus
@@ -43,9 +43,9 @@ while not done:
     th = drange(0.0, TWO_PI, math.radians(1))
 
     for theta in th:
-        xoff = (R + r * math.cos(theta)) * math.cos(phi) * noiseMax
-        zoff = (R + r * math.cos(theta)) * math.sin(phi) * noiseMax
-        yoff = r * math.sin(theta) * noiseMax
+        xoff = (R + r * math.cos(theta)) * math.cos(phi) * mult
+        zoff = (R + r * math.cos(theta)) * math.sin(phi) * mult
+        yoff = r * math.sin(theta) * mult
 
         points.append([math.floor(xoff), math.floor(yoff)+150, math.floor(zoff)])
 
