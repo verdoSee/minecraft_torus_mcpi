@@ -23,7 +23,7 @@ TWO_PI = math.pi*2
 done = False
 oPoints = []
 after = 314 #after how many blocks it should fill air, 314 its after half rotation because of 3.14 half circle you know...
-mult = 5 #faster way of writing R = 10 r = 5, generally if you want bigger torus play with this not R and r
+mult = 5 #faster way of writing R = 10 r = 5, generally if you want bigger torus play with this not R and r to keep ratios same
 time.sleep(2)
 
 half = False  # set it to True if you want half torus
