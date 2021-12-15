@@ -22,8 +22,8 @@ points = []
 TWO_PI = math.pi*2
 done = False
 oPoints = []
-after = 314
-mult = 5
+after = 314 #after how many blocks it should fill air, 314 its after half rotation because of 3.14 hald circle you know...
+mult = 5 #faster way of writing R = 10 r = 5, generally if you want bigger torus play with this not R and r
 time.sleep(2)
 
 half = False  # set it to True if you want half torus
@@ -40,7 +40,7 @@ while not done:
             for p in oPoints[x]:
                 mc.setBlock(p, block.AIR)
 
-    th = drange(0.0, TWO_PI, math.radians(1))
+    th = drange(0.0, TWO_PI, math.radians(1)) #the less radians the more detail, but no point goin lower because you gonna place blocks in the exact same location
 
     for theta in th:
         xoff = (R + r * math.cos(theta)) * math.cos(phi) * mult
