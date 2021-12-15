@@ -7,7 +7,7 @@ import math
 mc = minecraft.Minecraft.create()
 
 
-def drange(start, stop, step):
+def drange(start, stop, step): #custom function to calculate values since range() doesn't support floats
     r = start
     while r < stop:
         yield r
