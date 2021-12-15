@@ -47,7 +47,7 @@ while not done:
         zoff = (R + r * math.cos(theta)) * math.sin(phi) * mult
         yoff = r * math.sin(theta) * mult
 
-        points.append([math.floor(xoff), math.floor(yoff)+150, math.floor(zoff)])
+        points.append([math.floor(xoff), math.floor(yoff)+150, math.floor(zoff)]) #Do you see the +150? Yea thats how hight it gonna spawn. So change to your needs
 
     points = list(points for points, _ in itertools.groupby(points))
 
